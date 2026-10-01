@@ -1,0 +1,7 @@
+services:
+  planner:
+    build: .
+    container_name: multimaterial-print-planner
+    ports:
+      - "8000:8000"
+    restart: unless-stopped

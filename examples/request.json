@@ -1,0 +1,28 @@
+{
+  "jobs": [
+    {
+      "id": "J1",
+      "layers": [
+        {"material_id": "A", "print_seconds": 30, "volume": 10},
+        {"material_id": "B", "print_seconds": 20, "volume": 8},
+        {"material_id": "A", "print_seconds": 40, "volume": 12}
+      ],
+      "deadline_seconds": 80
+    },
+    {
+      "id": "J2",
+      "layers": [
+        {"material_id": "A", "print_seconds": 25, "volume": 9},
+        {"material_id": "B", "print_seconds": 35, "volume": 11}
+      ],
+      "deadline_seconds": 110
+    }
+  ],
+  "initial_material_id": "A",
+  "purge_matrix": {
+    "A": {"A": 0, "B": 20},
+    "B": {"A": 15, "B": 0}
+  },
+  "change_seconds": 10,
+  "total_purge_capacity": 100
+}
